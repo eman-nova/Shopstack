@@ -26,7 +26,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="section-head text-center-head">
           <div>
-            <span className="eyebrow">Customer's Review</span>
+            <span className="eyebrow">Customer Reviews</span>
             <h2 className="section-heading">Loved By Our <strong>Customers</strong></h2>
           </div>
         </div>
