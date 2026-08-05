@@ -4,7 +4,7 @@
 
 .text-center-head {
   width: 100%;
-  text-align: center;
+  text-align: left;
   justify-content: center;
 }
 .text-center-head .section-sub { margin-left: auto; margin-right: auto; }
