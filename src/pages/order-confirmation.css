@@ -1,0 +1,84 @@
+.order-confirmation {
+  padding: 80px 24px 110px;
+}
+
+.oc-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: var(--geeluxx-plum);
+  color: var(--geeluxx-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.order-confirmation .section-heading.text-center {
+  text-align: center;
+}
+
+.oc-sub {
+  max-width: 520px;
+  margin: 14px auto 44px;
+  text-align: center;
+}
+
+.oc-card {
+  max-width: 620px;
+  margin: 0 auto;
+  background: var(--geeluxx-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+}
+
+.oc-card-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  gap: 20px;
+}
+
+.oc-card-row span:last-child {
+  color: var(--color-text);
+  text-align: right;
+}
+
+.oc-total {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-brand);
+}
+.oc-total span:last-child { color: var(--color-brand); }
+
+.oc-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.oc-item img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.oc-item-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: 13.5px;
+}
+
+.oc-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}

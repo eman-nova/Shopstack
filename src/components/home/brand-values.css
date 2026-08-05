@@ -1,0 +1,39 @@
+.brand-values {
+  background: var(--geeluxx-white);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.brand-value {
+  text-align: center;
+  padding: 8px 16px;
+}
+
+.brand-value svg {
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.brand-value h4 {
+  font-size: 15.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-brand);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.brand-value p {
+  font-size: 13.5px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .brand-values-grid { grid-template-columns: 1fr 1fr; row-gap: 36px; }
+}

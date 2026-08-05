@@ -1,0 +1,116 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--geeluxx-white);
+  border: 1px solid rgba(201, 192, 181, 0.5);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base), border-color var(--transition-base);
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--geeluxx-taupe);
+}
+
+.product-card-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: linear-gradient(160deg, #f1ede4, #e7e0d2);
+}
+
+.product-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.product-card:hover .product-card-media img {
+  transform: scale(1.06);
+}
+
+.product-card-badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-card-add {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(43, 27, 47, 0.92);
+  color: var(--geeluxx-white);
+  border: none;
+  padding: 12px;
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  transition: bottom var(--transition-base);
+  backdrop-filter: blur(2px);
+}
+
+.product-card:hover .product-card-add {
+  bottom: 12px;
+}
+
+.product-card-add:disabled {
+  background: rgba(113, 108, 112, 0.85);
+  cursor: not-allowed;
+}
+
+.product-card-body {
+  padding: 18px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-card-type {
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.product-card-name {
+  font-size: 15.5px;
+  font-weight: 400;
+  color: var(--color-brand);
+  line-height: 1.4;
+}
+
+.product-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.product-card-price s {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+@media (hover: none) {
+  .product-card-add {
+    bottom: 12px;
+  }
+}
